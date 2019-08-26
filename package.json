@@ -10,6 +10,7 @@
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss css/styles.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
