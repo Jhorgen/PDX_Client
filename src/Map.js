@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LocationForm from './AddLocation';
 
 class Map extends Component {
     constructor(props){
@@ -17,7 +18,10 @@ class Map extends Component {
 
     render() {
       return (
+        <div>
         <p>Map Page </p>
+        <LocationForm />
+        </div>
       )
     }
 }

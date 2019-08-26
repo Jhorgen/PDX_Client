@@ -6,8 +6,12 @@ import {
   Marker,
 } from "react-google-maps";
 
+
+
 const MapWithAMarker = withScriptjs(withGoogleMap(props =>
   <GoogleMap
+    onClick={(e) => props.callback(e)}
+
     defaultZoom={8}
     defaultCenter={{ lat: -34.397, lng: 150.644 }}
   >
