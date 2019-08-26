@@ -9,7 +9,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +29,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+.jumbotron {
+  background-color: black;
+  color: yellow;
+  font-family: 'Anton', sans-serif;
+  padding: 18px;
+  font-size: 80px;
+
+
+
 }
