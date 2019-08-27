@@ -24,13 +24,11 @@ class Landing extends Component {
             .catch(error => console.log(error))
         }
 
-
         render() {
           return (
             <div>
             <p>Landing Page </p>
             <Carousel>
-
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -41,7 +39,6 @@ class Landing extends Component {
                   <h3>Double Decker Bikes</h3>
                 </Carousel.Caption>
               </Carousel.Item>
-
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -52,7 +49,6 @@ class Landing extends Component {
                   <h3>Milk Carton Boat Race</h3>
                 </Carousel.Caption>
               </Carousel.Item>
-
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -63,14 +59,12 @@ class Landing extends Component {
                   <h3>Fire blowing T-Rex on a Bike</h3>
                 </Carousel.Caption>
               </Carousel.Item>
-
             <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={Zoobomb}
                 alt="Third slide"
               />
-
               <Carousel.Caption>
                 <h3>Zooboom Pile of bikes!</h3>
               </Carousel.Caption>
