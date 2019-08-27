@@ -20,15 +20,7 @@ class Landing extends Component {
     render() {
       return (
         <div>
-        <p>Landing Page </p>
-        <MapWithAMarker
-              googleMapURL={"https://maps.googleapis.com/maps/api/js?key=" + API_KEY +
-        "&v=3.exp&libraries=geometry,drawing,places"}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `700px`, width: '1000px', float: 'right' }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-        />
-        </div>
+                </div>
       )
     }
 }
