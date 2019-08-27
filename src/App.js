@@ -5,6 +5,7 @@ import axios from 'axios'
 import Navbar from './Navbar.js'
 import Content from './Content.js'
 
+
 class App extends Component {
   constructor(props){
       super(props)
@@ -13,11 +14,13 @@ class App extends Component {
       }
   }
 
+
   changePage = newPage => {
     this.setState({
       page: newPage
     })
   }
+
 
   render(){
     return (
@@ -25,10 +28,12 @@ class App extends Component {
       <Navbar callback={this.changePage}/>
       <Content page={this.state.page} />
 
+
       </div>
     );
 
   }
+
 }
 
 export default App;
