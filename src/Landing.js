@@ -70,10 +70,11 @@ class Landing extends Component {
               </Carousel.Caption>
             </Carousel.Item>
             </Carousel>
-
+            
             </div>
           )
         }
       }
+
 
       export default Landing;

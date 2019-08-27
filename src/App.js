@@ -4,6 +4,7 @@ import './App.scss';
 import axios from 'axios'
 import Navbar from './Navbar.js'
 import Content from './Content.js'
+import SignupForm from './containers/Signup.js'
 
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
       <div className="App">
       <Navbar callback={this.changePage}/>
       <Content page={this.state.page} />
-
+      <SignupForm />
 
       </div>
     );
