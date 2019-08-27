@@ -38,8 +38,7 @@ class Landing extends Component {
                   alt="First slide"
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h3>Double Decker Bikes</h3>
                 </Carousel.Caption>
               </Carousel.Item>
 
@@ -50,8 +49,7 @@ class Landing extends Component {
                   alt="Third slide"
                 />
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3>Milk Carton Boat Race</h3>
                 </Carousel.Caption>
               </Carousel.Item>
 
@@ -62,8 +60,7 @@ class Landing extends Component {
                   alt="Third slide"
                 />
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3>Fire blowing T-Rex on a Bike</h3>
                 </Carousel.Caption>
               </Carousel.Item>
 
@@ -75,13 +72,10 @@ class Landing extends Component {
               />
 
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Zooboom Pile of bikes!</h3>
               </Carousel.Caption>
             </Carousel.Item>
             </Carousel>
-
-
 
             </div>
           )
