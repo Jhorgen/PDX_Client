@@ -24,7 +24,8 @@ class SignupForm extends React.Component {
 
   handlePost = (event) => {
     event.preventDefault();
-      axios.post('http://localhost:3001/things', ({name: this.state.name}))
+      axios.post('http://localhost:3000/users', ({name: this.state.name, email: this.state.email}))
+
       .then(response => {
           console.log(response)
 

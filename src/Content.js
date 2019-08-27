@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Landing from './Landing.js'
 import Categories from './Categories.js'
+<<<<<<< HEAD
 import ThingForm from './ThingForm.js'
+=======
+import SignupForm from './containers/Signup.js'
+>>>>>>> 26b6b78e032ebb2eddf96f32bd591aac472cedea
 import Map from './Map.js'
 import './App.scss';
 
@@ -44,6 +48,12 @@ class Content extends Component {
           )
         }
 
+
+        if(page == "Signup"){
+          return (
+            <SignupForm/>
+
+          )}
 
 
         return (

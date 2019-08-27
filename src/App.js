@@ -26,10 +26,16 @@ class App extends Component {
   render(){
     return (
       <div className="App">
+<<<<<<< HEAD
         <Navbar callback={this.changePage}/>
         <Content page={this.state.page} />
         <SignupForm />
         
+=======
+      <Navbar callback={this.changePage}/>
+      <Content page={this.state.page} />
+
+>>>>>>> 26b6b78e032ebb2eddf96f32bd591aac472cedea
       </div>
     );
 
