@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import LocationForm from './AddLocation';
+import ThingForm from './ThingForm';
+import MapWithAMarker from './lib/GoogleApi.js'
+const API_KEY = process.env.REACT_APP_API_KEY
 
 class Map extends Component {
     constructor(props){
@@ -20,7 +22,8 @@ class Map extends Component {
       return (
         <div>
         <p>Map Page </p>
-        <LocationForm />
+        <ThingForm /><br/>
+
         </div>
       )
     }
