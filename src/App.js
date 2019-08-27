@@ -26,10 +26,10 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-      <Navbar callback={this.changePage}/>
-      <Content page={this.state.page} />
-      <SignupForm />
-
+        <Navbar callback={this.changePage}/>
+        <Content page={this.state.page} />
+        <SignupForm />
+        
       </div>
     );
 

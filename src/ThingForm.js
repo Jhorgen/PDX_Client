@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MapWithAMarker from './lib/GoogleApi.js'
 import axios from 'axios'
+import './App.scss';
+
 
 const API_KEY = process.env.REACT_APP_API_KEY
 
@@ -58,6 +60,22 @@ class ThingForm extends Component {
     render() {
       return (
         <div>
+        <div className="wrapper">
+        <div className="map_info">
+          <p> xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of </p>
+        </div>
+          <div className="googlemap">
+          <MapWithAMarker
+              callback={this.handleClick}
+                googleMapURL={"https://maps.googleapis.com/maps/api/js?key=" + API_KEY +
+          "&v=3.exp&libraries=geometry,drawing,places"}
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `700px`, width: '1000px', float: 'right' }} />}
+          mapElement={<div style={{ height: `70%`, width: `70%` }} />}
+          />
+
+          </div>
+          </div>
           <h1>Add Thing</h1>
           <label>Name</label>
             <input type="text" name="name" onChange={this.handleChange} />
@@ -78,18 +96,10 @@ class ThingForm extends Component {
             <input className="" value={this.state.lng} onChange={(e) => this.handleLngChange(e)} />
             <br/>
             <button value="Submit" name="Submit" type="button" onClick={this.handleSubmit}> Submit</button> <br/> <br/>
-            <MapWithAMarker
-              callback={this.handleClick}
-                    googleMapURL={"https://maps.googleapis.com/maps/api/js?key=" + API_KEY +
-              "&v=3.exp&libraries=geometry,drawing,places"}
-              loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div style={{ height: `700px`, width: '1000px', float: 'right' }} />}
-              mapElement={<div style={{ height: `100%` }} />}
-            />
           </div>
 
           <br/>
-      </div>
+          </div>
       )
     }
 }

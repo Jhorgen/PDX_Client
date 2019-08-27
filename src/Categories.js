@@ -1,25 +1,41 @@
 import React, { Component } from 'react';
 import './App.scss';
+import axios from 'axios'
 
 class Categories extends Component {
     constructor(props){
         super(props)
+        this.state = {
+          things: []
+        }
     }
-    // componentDidMount() {
-    //     axios.get('http://localhost:3001/things')
-    //     .then(response => {
-    //         console.log(response)
-    //         this.setState({
-    //             message: response.data.Things
-    //         })
-    //     })
-    //     .catch(error => console.log(error))
-    // }
+    componentDidMount() {
+        axios.get('http://localhost:3000/things')
+        .then(response => {
+            console.log(response)
+            this.setState({
+                things: response.data
+            })
+        })
+        .catch(error => console.log(error))
+    }
 
 
     render() {
+      const {things} = this.state;
+      console.log(things)
       return (
-        <p>Categories Page </p>
+
+        <div>
+          <ol>
+            {things.map((thing, index) => (
+              <li>
+                <p>Name: {thing.name}</p>
+                <p>: {thing.name}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       )
     }
 }
