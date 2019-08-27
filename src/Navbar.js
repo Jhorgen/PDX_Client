@@ -26,6 +26,8 @@ class Navbar extends Component {
               <a class="nav-item nav-link active" onClick={() => this.props.callback("Home")} href="#" id="home">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" onClick={() => this.props.callback("Categories")} href="#">Categories</a>
               <a class="nav-item nav-link" onClick={() => this.props.callback("Map")} href="#">Map</a>
+              <a class="nav-item nav-link" onClick={() => this.props.callback("Signup")} href="#">Create acccount</a>
+
           </nav>
           </div>
           </div>
