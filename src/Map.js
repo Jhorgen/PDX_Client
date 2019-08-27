@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LocationForm from './AddLocation';
+
 import './App.scss';
 
 import ThingForm from './ThingForm';
@@ -44,6 +44,7 @@ class Map extends Component {
         <p>Map Page </p>
         <ThingForm /><br/>
 
+        </div>
         </div>
       )
     }
