@@ -45,6 +45,7 @@ class Map extends Component {
         <ThingForm /><br/>
 
         </div>
+        </div>
       )
     }
 }

@@ -28,7 +28,6 @@ class App extends Component {
       <div className="App">
       <Navbar callback={this.changePage}/>
       <Content page={this.state.page} />
-      <SignupForm />
 
       </div>
     );

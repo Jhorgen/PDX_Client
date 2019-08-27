@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Landing from './Landing.js'
 import Categories from './Categories.js'
+import SignupForm from './containers/Signup.js'
 import Map from './Map.js'
 import './App.scss';
 
@@ -37,6 +38,12 @@ class Content extends Component {
             <Categories/>
           )
         }
+
+        if(page == "Signup"){
+          return (
+            <SignupForm/>
+
+          )}
 
 
         return (
