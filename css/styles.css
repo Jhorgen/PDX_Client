@@ -1,0 +1,7 @@
+.jumbotron {
+  background-color: green;
+  color: yellow;
+  font-family: 'Anton', sans-serif;
+  padding: 19px;
+  font-size: 85px;
+  text-shadow: 2px 2px 8px red; }

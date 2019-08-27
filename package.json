@@ -4,14 +4,19 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+
+    "node-sass": "^4.12.0",
+
     "google-map-react": "^1.1.4",
     "google-maps-react": "^2.0.2",
+
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-google-maps": "^9.4.5",
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss css/styles.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,5 +36,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmartinson5/PDX-Weird-Client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmartinson5/PDX-Weird-Client/issues"
+  },
+  "homepage": "https://github.com/bmartinson5/PDX-Weird-Client#readme"
 }
