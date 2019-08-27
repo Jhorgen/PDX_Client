@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.scss';
 
 class Categories extends Component {
     constructor(props){
@@ -14,7 +15,7 @@ class Categories extends Component {
     //     })
     //     .catch(error => console.log(error))
     // }
-    
+
 
     render() {
       return (
