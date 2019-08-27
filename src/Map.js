@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LocationForm from './AddLocation';
+
 import './App.scss';
 
 import ThingForm from './ThingForm';
