@@ -46,7 +46,7 @@ class Landing extends Component {
                   alt="Third slide"
                 />
                 <Carousel.Caption>
-                  <h3>Milk Carton Boat Race</h3>
+                  <h3>Card Board Boat Race</h3>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -66,7 +66,7 @@ class Landing extends Component {
                 alt="Third slide"
               />
               <Carousel.Caption>
-                <h3>Zooboom Pile of bikes!</h3>
+                <h3>Zoobomb Pile of bikes!</h3>
               </Carousel.Caption>
             </Carousel.Item>
             </Carousel>
