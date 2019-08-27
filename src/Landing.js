@@ -1,3 +1,4 @@
+import './App.scss';
 import React, { Component } from 'react';
 import MapWithAMarker from './lib/GoogleApi.js'
 import Bike from "./img2/bike.jpg"
@@ -75,6 +76,7 @@ class Landing extends Component {
           )
         }
       }
+
 
 
       export default Landing;
